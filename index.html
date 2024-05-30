@@ -13,40 +13,48 @@
 
 
 
+
+
 </head>
 
 <body class="bg-gradient-to-r from-black to-indigo-900">
 
-    <div id="parent" class="flex flex-col w-screen h-screen px-3 gap-7">
-        <div id="navebar" class="fixed flex w-full px-5 h-12 justify-between items-center shadow-lg bg-black">
+    <div id="parent" class="flex flex-col items-end w-screen h-screen px-3 gap-16 ">
+        <div id="navebar" class="fixed flex w-full px-5 h-12  justify-between items-center shadow-lg  bg-black">
 
-            <div>
+            <div id="headername">
                 <a href="" class="text-lg font-bold text-green-300">Ayush.</a>
             </div>
 
-            <div class="flex gap-7 font-medium hidden text-white lg:visible">
-                <a href="" class="hover:animate-ping">Home</a>
+
+            <a><img id="menubtn" src="resource/menu.png" class="size-5" alt=""></a>
+            <div id="items" class="flex gap-7 font-medium hidden text-white lg:visible">
+
+                <a class=" "><img id="cross" class="size-4 inset-x-10" src="resource/cross.png" alt=""></a>
+                <a href="" class="">Home</a>
                 <a href="">About</a>
                 <a href="">Education</a>
                 <a href="">Skills</a>
                 <a href="">Contact</a>
+                <div id="headername">
+                    <a href="" class="text-lg font-bold text-green-300">Ayush.</a>
+                </div>
 
 
             </div>
-            <a href=""><img src="resource/menu.png" class="size-5" alt=""></a>
-
 
 
         </div>
 
 
-        <div id="home" class="flex flex-col items-center gap-5 my-16 lg:flex-row ">
+        <div id="home" class="flex flex-col items-center h-full w-full gap-5 ">
 
-            <div class="bg-green-900 h-52 rounded-full w-52 lg:hidden ">
+            <div class="flex justify-center h-52 rounded-full w-52 py-16  lg:hidden ">
                 <!--photo div small screen-->
+                <img src="resource/android.png" class="shadow-lg shadow-black rounded-full w-32 h-32" alt="">
 
             </div>
-            <div class="text-white mx-6 flex flex-col items-center">
+            <div class="text-white mx-6 flex flex-col items-center ">
                 <p class="font-bold text-4xl ">Ayush Kumar</p>
                 <p class="my-6">Temporibus asperiores vero cupiditate nostrum quisquam odio aperiam libero, ipsum quia.
                     Iste corrupti error voluptatem animi doloremque temporibus, consectetur asperiores. Libero doloribus
@@ -69,7 +77,7 @@
             </div>
         </div>
 
-        <div id="aboutsection" class="  flex flex-col items-center gap-5  lg:flex-row ">
+        <div id="aboutsection" class="  flex flex-col items-center gap-5  h-full w-full ">
 
             <div class="text-white mx-6 flex flex-col items-center">
                 <span class="font-bold text-4xl ">About <span
@@ -90,99 +98,87 @@
 
         </div>
 
-        <div id="skills" class="flex flex-col items-center gap-5  lg:flex-row ">
 
-            <div class="text-white mx-6 flex flex-col gap-5 items-center ">
-                <span class="font-bold text-4xl ">Skills </span>
-
-                <div
-                    class="flex flex-col gap-5 bg-gray-700 shadow-xl shadow-black px-10  py-5 justify-center items-center rounded-lg ">
+        
 
 
-                    <div class="flex  items-center justify-center flex-col gap-5">
-                        <span class="font-bold text-lg">Web <span
-                                class="font-bold  text-lg text-green-400 ">Development</span></span>
-                        <div class="flex gap-5 justify-center ">
-                            <img src="resource/html-5.png" class="size-10" alt="">
-                            <img src="resource/css.png" class="size-10" alt="">
-                            <img src="resource/java-script.png" class="size-10" alt="">
-
-                        </div>
-                        <hr class="bg-white w-full ">
-                    </div>
+        <div id="skills" class=" text-white flex flex-col items-center h-full w-full gap-5  ">
 
 
-                    <div class="flex items-center flex-col gap-5 ">
-                        <span class="font-bold text-lg ">Game <span
-                                class="font-bold  text-lg text-green-400 ">development</span></span>
-                        <div class="flex gap-5 justify-center">
-                            <img src="resource/c-sharp.png" class="size-10" alt="">
-                            <img src="resource/unity.png" class="size-10" alt="">
-                            <img src="resource/blender.png" class="size-10 rounded-md" alt="">
+        <span class="font-bold text-4xl ">Skills </span>
 
-                        </div>
-                        <hr class="bg-white w-full ">
+        <div class="  bg-gradient-to-r from-black via-indigo-900 to-indigo-600 shadow-xl flex flex-col gap-10  items-center shadow-black w-80 py-5 px-5 rounded-lg ">
+            <div class="flex flex-col  gap-5 w-full items-center">
+                <span class="font-bold text-2xl ">WEB-<span class="font-bold text-xl text-green-500 ">Development</span></span>
+                <div class="flex gap-x-5">
+                    <img src="resource/html-5.png" class="size-10 rounded-full shadow-lg shadow-black" alt="">
+                    <img src="resource/css.png" class="size-10 rounded-full shadow-lg shadow-black" alt="">
+                    <img src="resource/java-script.png" class="size-10 rounded-full shadow-lg shadow-black" alt="">
 
-                    </div>
-
-                    <div class="flex items-center flex-col gap-5 ">
-                        <span class="font-bold text-lg ">App <span
-                                class="font-bold  text-lg text-green-400 ">development</span></span>
-                        <div class="flex gap-12 justify-center">
-                            <img src="resource/android.png" class="size-10 rounded-md" alt="">
-                            <img src="resource/kotlin.png" class="size-10 rounded-md" alt="">
-
-                        </div>
-                        <hr class="bg-white w-full ">
-
-                    </div>
-                    <div class="flex items-center flex-col gap-5 ">
-                        <span class="font-bold text-lg">Version <span
-                                class="font-bold  text-lg text-green-400 ">Control</span></span>
-                        <div class="flex gap-3 items-center justify-center">
-                            <img src="resource/github.png" class="size-10" alt="">
-                            <span class="font-bold text-sm ">GIt/<span
-                                    class="font-bold  text-sm text-green-400 ">Github</span></span>
-
-                        </div>
-
-
-                    </div>
                 </div>
-
-
-            </div>
-
-        </div>
-
-        <div id="projects" class="projects text-white flex flex-col items-center gap-5  lg:flex-row ">
-         
-            
-                <span class="font-bold text-4xl ">Projects </span>
-                
-                <div class=" bg-gray-700 shadow-xl flex flex-col gap-10 items-center shadow-black px-5 py-5 rounded-lg ">
-                    <div id="webdev" class="flex flex-col bg-gradient-to-l from-gray-700 via-gray-850 to-black gap-5 w-60 h-20 justify-center rounded-sm items-center border-gray-950 border-4">
-                        <a href=""><span class="font-bold text-2xl ">WEB-<span class="font-bold  text-xl text-green-400 ">Development</span></span></a>
-                        
-                    </div>
-                    <div id="webdev" class="flex flex-col bg-gradient-to-l from-gray-700 via-gray-850 to-black gap-5 w-60 h-20 justify-center rounded-sm items-center border-gray-950 border-4">
-                        <a href=""><span class="font-bold text-2xl ">Game-<span class="font-bold  text-xl text-green-400 ">Development</span></span></a>
-                        
-                    </div>
-                    <div id="webdev" class="flex flex-col bg-gradient-to-l from-gray-700 via-gray-850 to-black gap-5 w-60 h-20 justify-center rounded-sm items-center border-gray-950 border-4">
-                        <a href=""><span class="font-bold text-2xl ">App-<span class="font-bold  text-xl text-green-400 ">Development</span></span></a>
-                        
-                    </div>
-                  
-                </div>
-            </div>
+                <hr class="bg-white w-full  ">
            
+            </div>
+
+            <div class="flex flex-col  gap-5 w-full items-center">
+                <span class="font-bold text-2xl ">Game-<span class="font-bold text-xl text-green-500 ">Development</span></span>
+                <div class="flex gap-x-5">
+                    <img src="resource/c-sharp.png" class="size-10 rounded-full shadow-lg shadow-black" alt="">
+                    <img src="resource/unity.png" class="size-10 rounded-full shadow-lg shadow-black" alt="">
+                    <img src="resource/blender.png" class="size-10 rounded-full shadow-lg shadow-black" alt="">
+
+                </div>
+                <hr class="bg-white w-full  ">
+           
+            </div>
+
+            <div class="flex flex-col  gap-5 w-full items-center">
+                <span class="font-bold text-2xl ">App-<span class="font-bold text-xl text-green-500 ">Development</span></span>
+                <div class="flex gap-x-5">
+                    <img src="resource/android.png" class="size-10 rounded-full shadow-lg shadow-black" alt="">
+                    <img src="resource/kotlin.png" class="size-10 rounded-full shadow-lg shadow-black" alt="">
+
+                </div>
+                <hr class="bg-white w-full  ">
+           
+            </div>
+            
+            
+
         </div>
+        </div>
+        <div id="projects" class=" text-white flex flex-col items-center h-full w-full gap-5  ">
 
 
-
+            <span class="font-bold text-4xl ">Projects </span>
+    
+            <div class=" bg-gradient-to-r from-black via-indigo-900 to-indigo-600 shadow-xl flex flex-col gap-10  items-center shadow-black w-80 py-5 rounded-lg ">
+                <div id="webdev"
+                    class="flex flex-col bg-gradient-to-l from-gray-700 via-gray-850 to-black gap-5 w-60 h-20 justify-center rounded-sm items-center border-gray-950 border-4">
+                    <a href=""><span class="font-bold text-2xl ">WEB-<span
+                                class="font-bold  text-xl text-green-400 ">Development</span></span></a>
+    
+                </div>
+                <div id="webdev"
+                    class="flex flex-col bg-gradient-to-l from-gray-700 via-gray-850 to-black gap-5 w-60 h-20 justify-center rounded-sm items-center border-gray-950 border-4">
+                    <a href=""><span class="font-bold text-2xl ">Game-<span
+                                class="font-bold  text-xl text-green-400 ">Development</span></span></a>
+    
+                </div>
+                <div id="webdev"
+                    class="flex flex-col bg-gradient-to-l from-gray-700 via-gray-850 to-black gap-5 w-60 h-20 justify-center rounded-sm items-center border-gray-950 border-4">
+                    <a href=""><span class="font-bold text-2xl ">App-<span
+                                class="font-bold  text-xl text-green-400 ">Development</span></span></a>
+    
+                </div>
+                
+    
+            </div>
+            </div>
 
     </div>
+
+    <script src="main.js"></script>
 
 
 
